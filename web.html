@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+</head>
+<body>
+    <h1>Web App</h1>
+    <p>This is a simple web application that demonstarates HTML,CSS and Basic React</p>
+    <div id="root"></div>
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        class App extends React.Component {
+            render(){
+                return (
+                    <div>
+                        <h2>Welcome to My Web App</h2>
+                        <p>This is a simple React component rendered in a web application.</p>
+                        <button onClick={() =>alert()}>Click Me!</button>
+                )
+            }
+        }
+    </script>
+    <script>
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
